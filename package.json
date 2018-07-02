@@ -5,7 +5,7 @@
   "repository": "github:moljac024/tinbin",
   "main": "index.js",
   "scripts": {
-    "compile": "babel src/index.js --out-file=index.js",
+    "prepare": "babel src/index.js --out-file=index.js",
     "test": "jest"
   },
   "author": "Bojan Matić <“matic.bojan@gmail.com”> (http://moljac024.com)",
