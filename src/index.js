@@ -2,7 +2,7 @@ const isFunction = require("lodash.isfunction")
 
 const noop = () => {}
 
-class DIError extends Error {
+class TinBinError extends Error {
   constructor(message) {
     super(message)
     this.name = this.constructor.name
@@ -32,7 +32,7 @@ module.exports = ({
       } else if (def) {
         return def
       } else if (errorOnMissing) {
-        throw new DIError("Missing dependency " + key)
+        throw new TinBinError("Missing dependency " + key)
       } else {
         return undefined
       }
