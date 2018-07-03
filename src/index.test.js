@@ -1,5 +1,13 @@
 const Container = require("./index")
 
+test("stores and retrieves values", () => {
+  const container = Container()
+
+  container.put("foo", "bar")
+
+  expect(container.get("foo")).toEqual("bar")
+})
+
 test("throws on missing data without default value", () => {
   const container = Container()
 
