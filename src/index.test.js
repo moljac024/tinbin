@@ -54,3 +54,12 @@ test("can initialize data", () => {
 
   expect(container.get("foo")).toEqual(1)
 })
+
+test("can read whole data", () => {
+  const container = Container()
+
+  container.put("foo", "bar")
+  container.put("bar", "baz")
+
+  expect(container.read()).toEqual({ foo: "bar", bar: "baz" })
+})
