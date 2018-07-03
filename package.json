@@ -1,6 +1,6 @@
 {
   "name": "tinbin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple container, can be used for simplified runtime DI",
   "repository": "github:moljac024/tinbin",
   "main": "index.js",
