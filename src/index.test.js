@@ -1,4 +1,4 @@
-const Container = require("./index")
+const Container = require("./index").default
 
 test("stores and retrieves values", () => {
   const container = Container()

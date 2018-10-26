@@ -14,7 +14,7 @@ $ npm install tinbin
 ### Usage
 
 ```js
-const Tinbin = require("tinbin")
+import Tinbin from 'tinbin'
 
 const container = Tinbin({
   errorOnMissing: false,

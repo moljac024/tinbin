@@ -14,7 +14,7 @@ class TinBinError extends Error {
   }
 }
 
-module.exports = ({
+export default ({
   data = {},
   onChange = noop,
   errorOnMissing = true,
