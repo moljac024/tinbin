@@ -1,4 +1,4 @@
-const Container = require("./index").default
+import Container from "./index"
 
 test("stores and retrieves values", () => {
   const container = Container()
@@ -11,7 +11,7 @@ test("stores and retrieves values", () => {
 test("throws on missing data without default value", () => {
   const container = Container()
 
-  expect(_ => {
+  expect(() => {
     container.get("foo")
   }).toThrow()
 })
